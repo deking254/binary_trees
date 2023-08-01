@@ -11,7 +11,7 @@ if (tree)
 {
 size_t a  = binary_tree_leaves(tree->left);
 size_t b = binary_tree_leaves(tree->right);
-return (1 + ((a > b ? a * b : b * a)));
+return (1 + (a * b));
 }
 return (y);
 }
