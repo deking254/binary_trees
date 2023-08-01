@@ -14,5 +14,5 @@ size_t a = binary_tree_height(tree->left);
 size_t b = binary_tree_height(tree->right);
 return (1 + ((a >= b) ? b : a));
 }
-return (-1);
+return (1);
 }
