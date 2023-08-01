@@ -9,7 +9,7 @@ child->n = value;
 if (parent->left)
 {
 child = binary_tree_node(parent, value);
-parent->left->parent = child;
+parent->left = binary_tree_node(child, parent->left->n);
 child->left = parent->left;
 parent->left = child;
 }
