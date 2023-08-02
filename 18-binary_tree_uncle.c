@@ -7,10 +7,11 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
+binary_tree_t *unc;
 if (node)
 {
-if (node->parent)
-binary_tree_sibling(node->parent);
+unc = binary_tree_sibling(node->parent);
+return (unc);
 }
 return (NULL);
 }
