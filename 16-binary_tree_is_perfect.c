@@ -26,8 +26,12 @@ return (0);
 size_t power(size_t base, size_t exponent)
 {
 size_t result = 1;
-for (size_t i = 0; i < exponent; i++)
+size_t i = 0;
+while (i < exponent)
+{
 result *= base;
+i++;
+}
 return (result);
 }
 
