@@ -12,6 +12,8 @@ if (tree->left  && tree->right)
 return (2);
 if (tree->left == NULL && tree->right == NULL)
 return (0);
+if (tree->left == NULL || tree->right == NULL)
+return (-1);
 }
 if (tree)
 {
