@@ -6,5 +6,16 @@
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-
+if (tree)
+{
+if (tree->left == NULL || tree->left == NULL)
+return (0);
+}
+if (tree)
+{
+size_t a = binary_tree_is_perfect(tree->left);
+size_t b = binary_tree_is_perfect(tree->right);
+return ((a == b) ? 1 : 0);
+}
+return (0);
 }
