@@ -12,7 +12,8 @@ binary_tree_t *f = (binary_tree_t *)fi;
 binary_tree_t *s = (binary_tree_t *)se;
 size_t a = binary_tree_depth(fi);
 size_t b = binary_tree_depth(se);
-
+if (fi == se)
+return (fi);
 if (a == b)
 {
 if (f && s)
