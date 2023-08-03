@@ -2,14 +2,14 @@
 size_t binary_tree_depth(const binary_tree_t *tree);
 /**
  * binary_trees_ancestor - Entry point
- * @first: root
- * @second: roo
+ * @fi: root
+ * @se: roo
  * Return: Always 0 (Success)
  */
-binary_tree_t *binary_trees_ancestor(binary_tree_t *first, binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(binary_tree_t *fi, binary_tree_t *se)
 {
-binary_tree_t *f = (binary_tree_t *)first;
-binary_tree_t *s = (binary_tree_t *)second;
+binary_tree_t *f = (binary_tree_t *)fi;
+binary_tree_t *s = (binary_tree_t *)se;
 size_t a = binary_tree_depth(first);
 size_t b = binary_tree_depth(second);
 
