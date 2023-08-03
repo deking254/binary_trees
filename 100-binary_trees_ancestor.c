@@ -10,8 +10,8 @@ binary_tree_t *binary_trees_ancestor(binary_tree_t *fi, binary_tree_t *se)
 {
 binary_tree_t *f = (binary_tree_t *)fi;
 binary_tree_t *s = (binary_tree_t *)se;
-size_t a = binary_tree_depth(first);
-size_t b = binary_tree_depth(second);
+size_t a = binary_tree_depth(fi);
+size_t b = binary_tree_depth(se);
 
 if (a == b)
 {
