@@ -9,7 +9,7 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 int forward = 0;
 int back = 0;
-if (tree)
+if (tree && func)
 {
 binary_tree_t *nodes[100];
 nodes[back++] = (binary_tree_t *)tree;
