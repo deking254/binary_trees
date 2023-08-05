@@ -8,11 +8,11 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 {
 int forward = 0;
 int back = 0;
+int null_present = 0;
 if (tree)
 {
 binary_tree_t *nodes[100];
 nodes[back++] = (binary_tree_t *)tree;
-int null_present = 0;
 while (forward < back)
 {
 binary_tree_t *current = nodes[forward++];
